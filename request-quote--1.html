@@ -9,46 +9,59 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <base href="/offerte/">
     <!-- for github deploy only -->
-    <link rel="stylesheet" href="styles/app.css?v=25c8fa18c929b25ee7ecc0786bd03e9e" inline> </head>
+    <link rel="stylesheet" href="styles/app.css?v=dec41da9817595b2b902f76b132874df" inline> </head>
   <body class="page page--light page--requestquote">
     <!-- SVG iconset: start -->
     <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
-        <symbol id="icon-close" viewBox="0 0 24 24">
+        <symbol id="icon-error" viewBox="0 0 32 32">
+          <title>error</title>
+          <path fill="#f74a4a" style="fill: var(--color1, #f74a4a)" d="M20.316 16l10.79 10.79c1.192 1.192 1.192 3.124 0 4.316s-3.124 1.192-4.316 0l-10.79-10.79-10.79 10.79c-1.192 1.192-3.124 1.192-4.316 0s-1.192-3.124 0-4.316l10.79-10.79-10.79-10.79c-1.192-1.192-1.192-3.124 0-4.316s3.124-1.192 4.316 0l10.79 10.79 10.79-10.79c1.192-1.192 3.124-1.192 4.316 0s1.192 3.124 0 4.316l-10.79 10.79z"></path>
+        </symbol>
+        <symbol id="icon-warning" viewBox="0 0 32 32">
+          <title>warning</title>
+          <path fill="#ffce52" style="fill: var(--color2, #ffce52)" d="M17.835 4.007l13.823 21.642c0.647 1.013 0.35 2.36-0.663 3.007-0.35 0.224-0.757 0.342-1.172 0.342h-27.645c-1.203 0-2.177-0.975-2.177-2.177 0-0.415 0.119-0.822 0.342-1.172l13.822-21.642c0.647-1.013 1.994-1.31 3.007-0.663 0.267 0.17 0.493 0.396 0.663 0.663z"></path>
+          <path fill="#1c1b1b" style="fill: var(--color3, #1c1b1b)" d="M14.432 14.856l-0.118-2.9h3.371l-0.118 2.9-0.47 5.448h-2.195l-0.47-5.448zM14.040 23.283c0-0.575 0.183-1.058 0.549-1.45s0.836-0.588 1.411-0.588c0.575 0 1.045 0.196 1.411 0.588s0.549 0.875 0.549 1.45c0 0.575-0.183 1.058-0.549 1.45s-0.836 0.588-1.411 0.588c-0.575 0-1.045-0.196-1.411-0.588s-0.549-0.875-0.549-1.45z"></path>
+        </symbol>
+        <symbol id="icon-success" viewBox="0 0 32 32">
+          <title>success</title>
+          <path fill="#45d692" style="fill: var(--color4, #45d692)" d="M10.869 22.597l17.592-17.592c0.81-0.81 2.122-0.81 2.932 0s0.81 2.122 0 2.932l-19.058 19.058c-0.81 0.81-2.122 0.81-2.932 0l-8.796-8.796c-0.81-0.81-0.81-2.122 0-2.932s2.122-0.81 2.932 0l7.33 7.33z"></path>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 32 32">
           <title>close</title>
-          <path d="M22.5 3.614l-8.386 8.386 8.386 8.386-2.114 2.114-8.386-8.386-8.386 8.386-2.114-2.114 8.386-8.386-8.386-8.386 2.114-2.114 8.386 8.386 8.386-8.386z"></path>
+          <path d="M30 4.819l-11.181 11.181 11.181 11.181-2.819 2.819-11.181-11.181-11.181 11.181-2.819-2.819 11.181-11.181-11.181-11.181 2.819-2.819 11.181 11.181 11.181-11.181z"></path>
         </symbol>
-        <symbol id="icon-check" viewBox="0 0 24 24">
+        <symbol id="icon-check" viewBox="0 0 32 32">
           <title>check</title>
-          <path d="M23.6 3.067c-0.533-0.533-1.333-0.533-1.867 0l-13.733 13.733-5.733-5.733c-0.533-0.533-1.333-0.533-1.867 0s-0.533 1.333 0 1.867l6.667 6.667c0.267 0.267 0.533 0.4 0.933 0.4s0.667-0.133 0.933-0.4l14.667-14.667c0.533-0.533 0.533-1.333 0-1.867z"></path>
+          <path d="M31.467 4.089c-0.711-0.711-1.778-0.711-2.489 0l-18.311 18.311-7.644-7.644c-0.711-0.711-1.778-0.711-2.489 0s-0.711 1.778 0 2.489l8.889 8.889c0.356 0.356 0.711 0.533 1.244 0.533s0.889-0.178 1.244-0.533l19.556-19.556c0.711-0.711 0.711-1.778 0-2.489z"></path>
         </symbol>
-        <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <symbol id="icon-arrow-right" viewBox="0 0 32 32">
           <title>arrow-right</title>
-          <path d="M21.724 12.657h-21.067c-0.363 0-0.657-0.294-0.657-0.657s0.294-0.657 0.657-0.657h21.067l-4.951-4.951c-0.257-0.257-0.257-0.673 0-0.929s0.673-0.257 0.929 0l5.903 5.903c0.073 0.032 0.141 0.078 0.201 0.138 0.136 0.136 0.2 0.318 0.192 0.496 0.009 0.179-0.055 0.36-0.192 0.496-0.060 0.060-0.128 0.106-0.201 0.138l-5.903 5.903c-0.257 0.257-0.673 0.257-0.929 0s-0.257-0.673 0-0.929l4.951-4.951z"></path>
+          <path d="M28.966 16.876h-28.090c-0.484 0-0.876-0.392-0.876-0.876s0.392-0.876 0.876-0.876h28.090l-6.601-6.601c-0.342-0.342-0.342-0.897 0-1.239s0.897-0.342 1.239 0l7.871 7.871c0.097 0.043 0.189 0.104 0.268 0.183 0.182 0.182 0.267 0.424 0.256 0.662 0.011 0.238-0.074 0.48-0.256 0.662-0.080 0.080-0.171 0.141-0.268 0.183l-7.871 7.871c-0.342 0.342-0.897 0.342-1.239 0s-0.342-0.897 0-1.239l6.601-6.601z"></path>
         </symbol>
-        <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+        <symbol id="icon-arrow-left" viewBox="0 0 32 32">
           <title>arrow-left</title>
-          <path d="M2.276 12.657h21.067c0.363 0 0.657-0.294 0.657-0.657s-0.294-0.657-0.657-0.657h-21.067l4.951-4.951c0.257-0.257 0.257-0.673 0-0.929s-0.673-0.257-0.929 0l-5.903 5.903c-0.073 0.032-0.141 0.078-0.201 0.138-0.136 0.136-0.2 0.318-0.192 0.496-0.009 0.179 0.055 0.36 0.192 0.496 0.060 0.060 0.128 0.106 0.201 0.138l5.903 5.903c0.257 0.257 0.673 0.257 0.929 0s0.257-0.673 0-0.929l-4.951-4.951z"></path>
+          <path d="M3.034 16.876h28.090c0.484 0 0.876-0.392 0.876-0.876s-0.392-0.876-0.876-0.876h-28.090l6.601-6.601c0.342-0.342 0.342-0.897 0-1.239s-0.897-0.342-1.239 0l-7.871 7.871c-0.097 0.043-0.189 0.104-0.268 0.183-0.182 0.182-0.267 0.424-0.256 0.662-0.011 0.238 0.074 0.48 0.256 0.662 0.080 0.080 0.171 0.141 0.268 0.183l7.871 7.871c0.342 0.342 0.897 0.342 1.239 0s0.342-0.897 0-1.239l-6.601-6.601z"></path>
         </symbol>
-        <symbol id="icon-menu" viewBox="0 0 24 24">
+        <symbol id="icon-menu" viewBox="0 0 32 32">
           <title>menu</title>
-          <path d="M1.5 4.5h21c0.828 0 1.5 0.672 1.5 1.5s-0.672 1.5-1.5 1.5h-21c-0.828 0-1.5-0.672-1.5-1.5s0.672-1.5 1.5-1.5zM1.5 10.5h21c0.828 0 1.5 0.672 1.5 1.5s-0.672 1.5-1.5 1.5h-21c-0.828 0-1.5-0.672-1.5-1.5s0.672-1.5 1.5-1.5zM1.5 16.5h21c0.828 0 1.5 0.672 1.5 1.5s-0.672 1.5-1.5 1.5h-21c-0.828 0-1.5-0.672-1.5-1.5s0.672-1.5 1.5-1.5z"></path>
+          <path d="M2 6h28c1.105 0 2 0.895 2 2s-0.895 2-2 2h-28c-1.105 0-2-0.895-2-2s0.895-2 2-2zM2 14h28c1.105 0 2 0.895 2 2s-0.895 2-2 2h-28c-1.105 0-2-0.895-2-2s0.895-2 2-2zM2 22h28c1.105 0 2 0.895 2 2s-0.895 2-2 2h-28c-1.105 0-2-0.895-2-2s0.895-2 2-2z"></path>
         </symbol>
-        <symbol id="icon-star" viewBox="0 0 24 24">
+        <symbol id="icon-star" viewBox="0 0 32 32">
           <title>star</title>
-          <path fill="#ffce52" style="fill: var(--color1, #ffce52)" d="M12.761 0.571l2.286 7.416c0.107 0.346 0.414 0.616 0.76 0.616h7.391c0.776 0 1.098 1.005 0.469 1.482l-5.975 4.522c-0.281 0.213-0.399 0.584-0.292 0.93l2.284 7.36c0.24 0.774-0.605 1.415-1.232 0.937l-5.982-4.564c-0.28-0.214-0.66-0.215-0.941-0.001l-5.982 4.558c-0.627 0.478-1.472-0.166-1.232-0.939l2.283-7.358c0.108-0.346-0.010-0.726-0.291-0.939l-5.975-4.504c-0.629-0.477-0.307-1.482 0.469-1.482h7.391c0.347 0 0.654-0.271 0.761-0.616l2.285-7.398c0.24-0.773 1.283-0.791 1.522-0.018z"></path>
+          <path fill="#ffce52" style="fill: var(--color2, #ffce52)" d="M17.015 0.762l3.048 9.888c0.143 0.461 0.552 0.822 1.014 0.822h9.854c1.034 0 1.464 1.34 0.625 1.977l-7.966 6.029c-0.375 0.284-0.532 0.778-0.39 1.241l3.045 9.814c0.32 1.032-0.806 1.887-1.643 1.249l-7.976-6.085c-0.374-0.285-0.88-0.286-1.254-0.002l-7.976 6.077c-0.837 0.637-1.962-0.221-1.642-1.253l3.045-9.811c0.144-0.462-0.014-0.968-0.389-1.253l-7.967-6.006c-0.838-0.636-0.409-1.977 0.625-1.977h9.854c0.463 0 0.872-0.361 1.015-0.822l3.047-9.864c0.32-1.031 1.711-1.055 2.030-0.024z"></path>
         </symbol>
-        <symbol id="icon-plus" viewBox="0 0 24 24">
+        <symbol id="icon-plus" viewBox="0 0 32 32">
           <title>plus</title>
-          <path d="M12.8 11.2h2.4c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8h-2.4v2.4c0 0.442-0.358 0.8-0.8 0.8s-0.8-0.358-0.8-0.8v-2.4h-2.4c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h2.4v-2.4c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8v2.4zM12 0c6.617 0 12 5.383 12 12s-5.383 12-12 12-12-5.384-12-12c0-6.617 5.383-12 12-12zM12 22.993c6.062 0 10.993-4.932 10.993-10.993s-4.932-10.994-10.993-10.994-10.993 4.932-10.993 10.994c0 6.062 4.932 10.993 10.993 10.993z"></path>
+          <path d="M17.067 14.933h3.2c0.589 0 1.067 0.478 1.067 1.067s-0.478 1.067-1.067 1.067h-3.2v3.2c0 0.589-0.478 1.067-1.067 1.067s-1.067-0.478-1.067-1.067v-3.2h-3.2c-0.589 0-1.067-0.478-1.067-1.067s0.478-1.067 1.067-1.067h3.2v-3.2c0-0.589 0.478-1.067 1.067-1.067s1.067 0.478 1.067 1.067v3.2zM16 0c8.822 0 16 7.178 16 16s-7.178 16-16 16-16-7.179-16-16c0-8.822 7.178-16 16-16zM16 30.658c8.082 0 14.658-6.576 14.658-14.658s-6.576-14.659-14.658-14.659-14.658 6.575-14.658 14.659c0 8.082 6.575 14.658 14.658 14.658z"></path>
         </symbol>
-        <symbol id="icon-minus" viewBox="0 0 24 24">
+        <symbol id="icon-minus" viewBox="0 0 32 32">
           <title>minus</title>
-          <path fill="#cfccce" style="fill: var(--color2, #cfccce)" d="M20.489 3.521c4.681 4.681 4.681 12.298 0 16.979s-12.298 4.681-16.979 0-4.68-12.298 0-16.979c4.681-4.681 12.298-4.681 16.979 0zM4.223 19.787c4.288 4.288 11.266 4.288 15.555 0s4.289-11.267 0.001-15.555-11.266-4.288-15.555 0.001c-4.288 4.288-4.288 11.266 0 15.555zM8.498 12.81c-0.276 0-0.5-0.224-0.5-0.5v-0.6c0-0.276 0.224-0.5 0.5-0.5h7.003c0.276 0 0.5 0.224 0.5 0.5v0.6c0 0.276-0.224 0.5-0.5 0.5h-7.003z"></path>
+          <path fill="#cfccce" style="fill: var(--color5, #cfccce)" d="M27.319 4.694c6.241 6.241 6.241 16.397 0 22.638s-16.397 6.241-22.638 0-6.241-16.398 0-22.638c6.241-6.241 16.397-6.241 22.638 0zM5.63 26.383c5.718 5.718 15.022 5.718 20.739 0s5.719-15.022 0.001-20.74-15.022-5.718-20.74 0.001c-5.718 5.718-5.718 15.022 0 20.739zM11.331 17.081c-0.368 0-0.667-0.299-0.667-0.667v-0.8c0-0.368 0.299-0.667 0.667-0.667h9.338c0.368 0 0.667 0.299 0.667 0.667v0.8c0 0.368-0.299 0.667-0.667 0.667h-9.338z"></path>
         </symbol>
-        <symbol id="icon-right" viewBox="0 0 24 24">
+        <symbol id="icon-right" viewBox="0 0 32 32">
           <title>right</title>
-          <path d="M17.632 12.992c0.491-0.548 0.491-1.436 0-1.984l-9.672-10.803c-0.245-0.274-0.643-0.274-0.888 0l-0.888 0.992c-0.245 0.274-0.245 0.718 0 0.992l8.341 9.315c0.245 0.274 0.245 0.719 0 0.992l-8.341 9.316c-0.245 0.274-0.245 0.718 0 0.992l0.888 0.992c0.245 0.274 0.643 0.274 0.888 0l9.672-10.803z"></path>
+          <path d="M23.509 17.322c0.654-0.73 0.654-1.914 0-2.645l-12.896-14.404c-0.327-0.365-0.857-0.365-1.184 0l-1.184 1.322c-0.327 0.365-0.327 0.957 0 1.322l11.121 12.42c0.327 0.365 0.327 0.958 0 1.322l-11.121 12.421c-0.327 0.365-0.327 0.957 0 1.322l1.184 1.322c0.327 0.365 0.857 0.365 1.184 0l12.896-14.404z"></path>
         </symbol>
       </defs>
     </svg>
@@ -130,235 +143,293 @@
                   </ul>
                 </nav>
                 <!-- End macro: `appSteps` -->
-                <form class="form" name="requestQuote1">
-                  <div class="form-group row">
+                <form class="form form-validate" name="requestQuote1">
+                  <div class="row form-row-radios">
                     <div class="col-sm-12">
                       <div class="custom-control-label">Soor uitvaart:</div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="uitvaart" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Begrafenis</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="uitvaart" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Begrafenis</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="uitvaart" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Crematie</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="uitvaart" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Crematie</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="row form-row-radios">
                     <div class="col-sm-12">
                       <div class="custom-control-label">Indicatie periode van overlijden:</div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="periode" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Verwacht binnen 3-4 maanden</span>
-                      </label>
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="periode" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Verwacht tussen 5 to 12 maanden</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="periode" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Verwacht binnen 3-4 maanden</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="periode" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Verwacht tussen 5 to 12 maanden</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="periode" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Reeds overleden (spoed)</span>
-                      </label>
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="periode" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">De komende jaar nog niet aan de orde</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="periode" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Reeds overleden (spoed)</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="periode" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">De komende jaar nog niet aan de orde</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="row form-row-radios">
                     <div class="col-sm-12">
                       <div class="custom-control-label">Hoeveel mensen verwacht u?:</div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="mensen" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Minder dan 25</span>
-                      </label>
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="mensen" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">25 - 50</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="mensen" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Minder dan 25</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="mensen" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">25 - 50</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="mensen" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">50 - 100</span>
-                      </label>
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="mensen" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Meer dan 100</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="mensen" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">50 - 100</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="mensen" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Meer dan 100</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="row form-row-radios">
                     <div class="col-sm-12">
                       <div class="custom-control-label">Locatie van de opbarding:</div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="locatie" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Thuis</span>
-                      </label>
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="locatie" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Niet opbaren</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="locatie" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Thuis</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="locatie" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Niet opbaren</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="locatie" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">In uitvaartcentrum</span>
-                      </label>
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="locatie" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Weet ik (nog) niet</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="locatie" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">In uitvaartcentrum</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="locatie" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Weet ik (nog) niet</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="row form-row-radios">
                     <div class="col-sm-12">
                       <div class="custom-control-label">Sort kist:</div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="kist" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Draagplant en wade</span>
-                      </label>
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="kist" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Luxe kist</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="kist" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Draagplant en wade</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="kist" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Luxe kist</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="kist" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Basis kist</span>
-                      </label>
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="kist" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">De kist regelen wij zelf</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="kist" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Basis kist</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="kist" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">De kist regelen wij zelf</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="row form-row-radios">
                     <div class="col-sm-12">
                       <div class="custom-control-label">Rouwkaarten:</div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="rouwkaarten" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Jaa</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="rouwkaarten" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Jaa</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="rouwkaarten" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Nee</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="rouwkaarten" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Nee</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="row form-row-radios">
                     <div class="col-sm-12">
                       <div class="custom-control-label">Aansluitende koffietafel:</div>
                     </div>
                     <div class="col-xs-12">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="koffietafel" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Nee</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="koffietafel" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Nee</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-xs-12">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="koffietafel" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Koffie en cake</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="koffietafel" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Koffie en cake</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-xs-12">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="koffietafel" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Borrelhapjes en drankjes</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="koffietafel" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Borrelhapjes en drankjes</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="row form-row-radios">
                     <div class="col-sm-12">
                       <div class="custom-control-label">Bloemarrangement:</div>
                     </div>
                     <div class="col-sm-4">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="bloemarrangement" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Nee</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="bloemarrangement" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Nee</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-sm-4">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="bloemarrangement" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Budget</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="bloemarrangement" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Budget</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-sm-4">
-                      <label class="custom-control custom-radio">
-                        <input class="custom-control-input" name="bloemarrangement" type="radio" value="radioValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Luxe</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-radio">
+                          <input class="custom-control-input" name="bloemarrangement" type="radio" value="radioVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Luxe</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="row form-row-chekboxes">
                     <div class="col-sm-12">
                       <div class="custom-control-label">Overlijdensadvertenties:</div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-checkbox">
-                        <input class="custom-control-input" name="In regionaal dagblad" type="checkbox" value="checkboxValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Toggle checkbox</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-checkbox">
+                          <input class="custom-control-input" name="In regionaal dagblad" type="checkbox" value="checkboxVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Toggle</span>
+                        </label>
+                      </div>
                     </div>
                     <div class="col-sm-6">
-                      <label class="custom-control custom-checkbox">
-                        <input class="custom-control-input" name="In landelijk dagblad" type="checkbox" value="checkboxValue">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Toggle checkbox</span>
-                      </label>
+                      <div class="form-group">
+                        <label class="custom-control custom-checkbox">
+                          <input class="custom-control-input" name="In landelijk dagblad" type="checkbox" value="checkboxVal">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Toggle</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label>Omschrijving:</label>
-                    <textarea class="form-control" rows="3" placeholder="Input"></textarea>
+                  <div class="row">
+                    <div class="col-xs-12 form-group">
+                      <label>Omschrijving:</label>
+                      <textarea class="form-control" rows="3" placeholder="Input"></textarea>
+                    </div>
                   </div>
                   <div class="form-group">
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Continue to step 2</button>
@@ -541,6 +612,6 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/app.js?v=e122eeffab71b962f53ff39c0701d20e" inline></script>
+    <script src="scripts/app.js?v=dccf8a96ce0610d3d3d01a3eb6045f5a" inline></script>
   </body>
 </html>
